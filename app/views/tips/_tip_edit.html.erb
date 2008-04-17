@@ -1,0 +1,30 @@
+<% create_or_update = defined?(title) ? title : "Create" %>
+
+<%= error_messages_for :tip %>
+
+<% form_for(tip) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Content</b><br />
+    <%= f.text_area :content %>
+  </p>
+
+  <p>
+    <b>Category</b><br />
+    <%= f.text_field :category %>
+  </p>
+
+  <p>
+    <b>Link</b><br />
+    <%= f.text_field :link %>
+  </p>
+
+  <p>
+    <%= f.submit create_or_update %>
+  </p>
+<% end %>
+

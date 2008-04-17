@@ -1,0 +1,3 @@
+h1. Rails Tips
+
+_a web site for sharing Tips & Tricks with other users_

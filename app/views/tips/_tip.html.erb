@@ -1,0 +1,12 @@
+<div class="tip">
+  <h2><%=h tip.title %></h2>
+
+  <div class="tip-content">
+    <%=h tip.content %>
+  </div>
+
+  <b>Category:</b>
+  <%=h tip.category %>
+
+  <p>Go here for additional information: <%= link_to h(tip.link), h(tip.link) %></p>
+</div>

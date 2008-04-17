@@ -1,0 +1,22 @@
+.tip {
+  margin: 10px;
+  font-size: 150%;
+}
+
+.tip .tip-content
+  margin-left: 20px;
+  
+}
+
+
+.user {
+  margin: 10px;
+}
+
+.user .name
+  font-size: 150%;
+  
+}
+
+.user .homepage
+}

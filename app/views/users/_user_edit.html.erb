@@ -1,0 +1,24 @@
+<% create_or_update = defined?(title) ? title : "Create" %>
+
+<%= error_messages_for :user %>
+
+<% form_for(user) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Homepage</b><br />
+    <%= f.text_field :homepage %>
+  </p>
+
+  <p>
+    <%= f.submit create_or_update %>
+  </p>
+<% end %>

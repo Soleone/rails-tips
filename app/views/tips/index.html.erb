@@ -1,0 +1,9 @@
+<h1>All Tips</h1>
+
+<% for tip in @tips %>
+  <%= render :partial => 'tip', :locals => {:tip => tip} %>
+<% end %>
+
+<br />
+
+<%= link_to 'Create a new Tip', new_tip_path %>
